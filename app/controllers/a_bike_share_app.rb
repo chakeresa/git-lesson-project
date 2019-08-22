@@ -13,10 +13,7 @@ class ABikeShareApp < Sinatra::Base
     erb :'/station/new'
   end
 
-  post '/stations' do
-    Station.create(params[:station])
-    redirect "/stations"
-  end
+  # deleted some stuff
 
   get '/stations/:id' do
     @station = Station.find(params[:id])
