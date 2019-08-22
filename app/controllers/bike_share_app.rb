@@ -15,6 +15,7 @@ class BikeShareApp < Sinatra::Base
   end
 
   # this is a new comment
+  #another comment
 
   get '/stations/new' do
     erb :'/station/new'
